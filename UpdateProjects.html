@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RG's Portfolio</title>  
+<style>
+.header {
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(to bottom, #660033 0%, #ff3300 100%);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.pagination{
+    display: inline-block;
+}
+.pagination a{
+    color: red;
+    float:left;
+    padding: 8px 16px;
+    margin: 0 4px;
+}
+.pagination a:hover:not(.active){
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.center{
+    text-align: center;
+
+}
+
+.footer {
+  background: linear-gradient(to top, #660033 0%, #ff3300 100%);
+  padding: 5px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fantasy", copperplate;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+.img {
+  background-color: lightgray;
+  width: 100%;
+  padding: 20px;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+    <img src="/Users/RG1_Gaming/Examples/Pictures/IMG_3003.jpg" style="height:120px; border-radius: 50%; border: 5px solid red;">
+    <h1>Projects</h1>
+</div>
+
+<div class ="center"> 
+<div class ="pagination">
+    <a href="#">&laquo;</a>
+    <a href="/Users/RG1_Gaming/Examples/Midterm/UpdatedHome.html">HOME</a>
+    <a href="/Users/RG1_Gaming/Examples/Midterm/UpdatedAbout.html">ABOUT</a>
+    <a href="/Users/RG1_Gaming/Examples/Midterm/UpdateProjects.html">PROJECTS</a>
+    <a href="/Users/RG1_Gaming/Examples/Midterm/UpdatedContact.html">CONTACT</a>
+    <a href="#">&raquo;</a>
+</div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Projects</h2>
+      <div class="img" style="height:200px;">Some projects that I've worked on...
+      <p>Made GUIS functions.</p>
+      <p1>Made a functional mean, median, & mode program.</p1>
+      <p2>Made a function that calculates factorizations.</p2>
+      <p3> A working menu that adds, edits, and deletes courses.</p3>
+      </div>
+    </div>
+    <div class="card">
+      <h2>My Future</h2>
+      <div class="img" style="height:200px;">In the future I'm hoping I can succeed on making my dreams come true!
+      <p> It will take a lot of hardwork to accomplish and a lot of typing, but in the end it will all be worth it for me and my family and make them proud.</p>
+      </div>      
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Goals</h2>
+      <div class="img" style="height:100px;">-Get a Intership<p>-Graduate from UIW</p><p1>-Work for my dream job</p1></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me:</h3>
+      <p>Github, Twitter, & Instagram</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Project Page</p>
+</div>
+
+</body>
+</html>

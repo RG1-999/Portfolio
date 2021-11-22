@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RG's Portfolio</title>  
+<style>
+.header {
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(to bottom, #660033 0%, #ff3300 100%);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.pagination{
+    display: inline-block;
+}
+.pagination a{
+    color: red;
+    float:left;
+    padding: 8px 16px;
+    margin: 0 4px;
+}
+.pagination a:hover:not(.active){
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.center{
+    text-align: center;
+
+}
+
+.footer {
+  background: linear-gradient(to top, #660033 0%, #ff3300 100%);
+  padding: 5px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fantasy", copperplate;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+article {
+    float: center;
+    padding: 10px;
+    width: auto;
+    background-color: lightgray;
+    height: 200px; 
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+h1 {text-align: center;}
+p {text-align: center;}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color:black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+    <img src="/Users/RG1_Gaming/Examples/Pictures/IMG_3003.jpg" style="height:120px; border-radius: 50%; border: 5px solid red;">
+    <h1>Contact</h1>
+</div>
+<div class ="center"> 
+<div class ="pagination">
+    <a href="#">&laquo;</a>
+    <a href="/Users/RG1_Gaming/Examples/Midterm/UpdatedHome.html">HOME</a>
+    <a href="/Users/RG1_Gaming/Examples/Midterm/UpdatedAbout.html">ABOUT</a>
+    <a href="/Users/RG1_Gaming/Examples/Midterm/UpdateProjects.html">PROJECTS</a>
+    <a href="/Users/RG1_Gaming/Examples/Midterm/UpdatedContact.html">CONTACT</a>
+    <a href="#">&raquo;</a>
+</div>
+</div>
+
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="firstname" placeholder="First name..">
+  
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lastname" placeholder="Last name..">
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Example@gmail.com"> 
+  
+      <label for="subject">Question/Issue:</label>
+    <textarea id="subject" name="subject" placeholder="Type something.." style="height:170px">
+</textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+</div>
+
+<div class="footer">
+  <p>Contact Page</p>
+</div>
+
+</body>
+</html>
